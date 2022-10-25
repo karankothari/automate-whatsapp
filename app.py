@@ -30,7 +30,7 @@ def reply():
             option = int(text)
         except:
             res.message("Please enter a valid response.\nYou can choose from one of the"
-            " options below: \n\n*Services*\n\n1️⃣ To *Sales Department* us \n2️⃣ For *Job / Career* \n3️⃣ To *Contact Us* "
+            " options below: \n\n1️⃣ To *Sales Department* us \n2️⃣ For *Job / Career* \n3️⃣ To *Contact Us* "
             "\n4️⃣ For *Working Hours*")
             return str(res)
 

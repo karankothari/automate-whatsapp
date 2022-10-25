@@ -22,7 +22,7 @@ def reply():
     user = users.find_one({"number":number})
     if bool(user) == False:
         res.message("Hi, thanks for contacting *A PIXEL HOUSE Digital Agency*. \nYou can choose from one of the"
-            " options below: \n\n*Services*\n\n1️⃣ To *Sales Department* us \n2️⃣ For *Job / Career* \n3️⃣ To *Contact Us* "
+            " options below: \n\n1️⃣ To *Sales Department* us \n2️⃣ For *Job / Career* \n3️⃣ To *Contact Us* "
             "\n4️⃣ For *Working Hours*")
         users.insert_one({"number": number, "status": "main", "message":[]})
     elif user["status"] == "main":
